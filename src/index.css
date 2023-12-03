@@ -25,6 +25,25 @@
   scroll-behavior: smooth;
 }
 
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
 .nav {
   
 
@@ -76,12 +95,14 @@
     #ffffff -278.56%,
     #6d6d6d -78.47%,
     #11101d 91.61%
+    
   );
 }
 
 .bg-black-gradient-2 {
   background: linear-gradient(
     -168.39deg,
+    
     #ffffff -278.56%,
     #6d6d6d -78.47%,
     #11101d 91.61%
@@ -103,7 +124,7 @@
 
 .bg-gba-gradient {
 
-    background: linear-gradient(125.17deg,  #2E1A47 60%, #00C389 100%);
+    background: linear-gradient(125.17deg,  #2E1A47 70%, #00C389 100%);
     color: white; /* Asegúrate de que el texto sea legible en el gradiente */
   
 }

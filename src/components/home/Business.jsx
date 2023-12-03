@@ -1,17 +1,18 @@
 import { features } from "@/constants";
 import styles, { layout } from "@/style";
 import Section from "@/components/common/Section";
+import discount from "@/assets/Discount.svg";
 
 const FeatureCard = ({ icon, title, content, index, darkMode }) => (
   <div
     className={`flex flex-row items-center  p-6 rounded-[20px] ${
       index !== features.length - 1 ? "mb-6" : "mb-0"
-    }  ${darkMode ? "bg-black-gradient-2" : "bg-gba-gradient"} `}
+    }  ${darkMode ? "bg-gba-gradient" : "bg-gba-gradient"} `}
   >
     <div
       className={`w-[64px] h-[64px] mask mask-hexagon ${styles.flexCenter} bg-dimBlue`}
     >
-      <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
+      <img src={icon} alt="star" className=" h-[400px] object-contain" />
     </div>
     <div className="flex-1 flex flex-col ml-3">
       <h4 className={`${styles.title}`}>{title}</h4>

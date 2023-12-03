@@ -15,6 +15,8 @@ import {
   star,
 } from "../assets";
 
+import discount from "@/assets/Discount.svg";
+
 export const navLinks = [
   {
     id: "home",
@@ -37,28 +39,28 @@ export const navLinks = [
 export const features = [
   {
     id: "feature-1",
-    icon: star,
+    icon: discount,
     title: "Consultoría",
     content:
       "Unlock tantalizing combinations of legal promotions and professional rewards with our buffet of expert legal services.",
   },
   {
     id: "feature-2",
-    icon: shield,
+    icon: discount,
     title: "Marketing As a Service",
     content:
       "We proactively ensure the security of your confidential information and legal transactions, providing you with a shield against any legal concerns.",
   },
   {
     id: "feature-3",
-    icon: send,
+    icon: discount,
     title: "Staffing",
     content:
       "Effortlessly transfer your legal cases to us for expert handling. Our streamlined process can save you time and resources in managing legal matters.",
   },
   {
     id: "feature-4",
-    icon: send,
+    icon: discount,
     title: "Transformation",
     content:
       "Effortlessly transfer your legal cases to us for expert handling. Our streamlined process can save you time and resources in managing legal matters.",
