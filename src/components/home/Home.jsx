@@ -6,6 +6,7 @@ import Billing from "@/components/home/Billing";
 import CardDeal from "@/components/home/CardDeal";
 import ServicesHome from "@/components/home/ServicesHome";
 import shield from "@/assets/Shield.svg";
+import Clients from "@/components/home/Clients";
 import { FaWhatsapp } from "react-icons/fa";
 
 const Home = ({ darkMode }) => {
@@ -26,6 +27,7 @@ const Home = ({ darkMode }) => {
           <Billing darkMode={darkMode} />
           <CardDeal darkMode={darkMode} />
           <ServicesHome darkMode={darkMode} />
+          <Clients darkMode={darkMode} />
         </div>
       </div>
 
