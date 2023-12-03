@@ -28,23 +28,23 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       link: "Blog",
     },
     {
-      id: 5,
+      id: 6,
       link: "Contacto",
     },
   ];
 
   return (
-    <div className={` ${styles.paddingX} fixed w-full`}>
-      <div className={`${styles.boxWidth} `}>
-        <div className="w-full  h-20 dark:text-white z-20   ">
-          <div className="flex justify-start md:justify-end md:gap-5 items-center max-w-screen-xl mx-auto px-8 h-full">
+    <div className={` ${styles.paddingX}   ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}  `}>
+        <div className="w-full  h-20 dark:text-white  ">
+          <div className="flex justify-start md:justify-end md:gap-5 items-center  mx-auto  h-full">
             <div className="mr-auto hidden md:flex">logo</div>
             <div className="hidden lg:flex items-center">
               <ul className="flex gap-6 ">
                 {links.map(({ id, link }) => (
                   <li
                     key={id}
-                    className="capitalize duration-300 hover:text-primary hover:scale-110 cursor-pointer"
+                    className="py-6  capitalize duration-300 hover:text-primary hover:scale- cursor-pointer"
                   >
                     {link}
                   </li>

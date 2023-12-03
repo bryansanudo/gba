@@ -45,13 +45,13 @@
 .text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
-    #def9fa 0.89%,
-    #bef3f5 17.23%,
-    #9dedf0 42.04%,
-    #7de7eb 55.12%,
-    #5ce1e6 71.54%,
-    #33bbcf 100%
-  );
+    #00C389 0.89%,     /* Nuevo color en el primer punto */
+    #4CAF50 17.23%,    /* Verde brillante */
+    #45A047 42.04%,    /* Verde oscuro */
+    #388E3C 55.12%,    /* Verde bosque */
+    #2E7D32 71.54%,    /* Verde profundo */
+    #1B5E20 100%       /* Verde intenso */
+);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -154,7 +154,7 @@
 }
 
 .pink__gradient {
-  background: linear-gradient(90deg, #2E1A47 0%, #fc67fa 100%);
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
   filter: blur(900px);
 }
 
