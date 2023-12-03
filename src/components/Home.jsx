@@ -3,7 +3,9 @@ import Section from "@/components/common/Section";
 const Home = () => {
   return (
     <Section>
-      <div className="h-screen">2 test gradients 2</div>
+      <div className="h-screen text-black dark:text-white">
+        3 test gradients 3
+      </div>
     </Section>
   );
 };
