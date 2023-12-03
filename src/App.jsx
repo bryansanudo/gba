@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
-import Home from "@/components/Home";
+import Home from "@/components/home/Home";
 import styles from "@/style";
 
 function App() {
@@ -8,10 +8,9 @@ function App() {
 
   return (
     <div className={darkMode && "dark"}>
-      <div className="dark:bg-accent w-full overflow-hidden">
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-
-        <Home />
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      <div className="dark:bg-accent  w-full overflow-hidden">
+        <Home darkMode={darkMode} />
       </div>
     </div>
   );

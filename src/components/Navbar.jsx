@@ -34,9 +34,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   ];
 
   return (
-    <div className={` ${styles.paddingX}   ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}  `}>
-        <div className="w-full  h-20 dark:text-white  ">
+    <div
+      className={` ${styles.paddingX} nav fixed w-full z-40   ${styles.flexCenter}`}
+    >
+      <div className={`${styles.boxWidth}   `}>
+        <div className="w-full  h-20 dark:text-white ">
           <div className="flex justify-start md:justify-end md:gap-5 items-center  mx-auto  h-full">
             <div className="mr-auto hidden md:flex">logo</div>
             <div className="hidden lg:flex items-center">
