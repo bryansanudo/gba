@@ -76,6 +76,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               <a href="https://bryan95-portfolio-esp.vercel.app/">
                 <span className="hover:text-primary duration-300">ESP</span>
               </a>
+              <div className="bg-gray-300 h-6 mx-2 w-[1px] hidden md:flex"></div>
+              <div>Smart Center</div>
             </div>
             <div className="ml-auto md:hidden flex">logo</div>
           </div>
@@ -85,7 +87,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           className={`fixed w-full  text-white z-10 left-0 h-fit py-12 lg:hidden flex justify-center text-center text-2xl duration-500 ${
             isMenuShown
               ? "top-16 rounded-b-2xl bg-gray-900 opacity-95"
-              : "top-[-100%]"
+              : "top-[-600px]"
           }`}
         >
           <ul>

@@ -14,12 +14,8 @@ const FeatureCard = ({ icon, title, content, index, darkMode }) => (
       <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
     </div>
     <div className="flex-1 flex flex-col ml-3">
-      <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
-        {title}
-      </h4>
-      <p className="font-poppins font-normal text-white text-[16px] leading-[24px]">
-        {content}
-      </p>
+      <h4 className={`${styles.title}`}>{title}</h4>
+      <p className={`${styles.subtitle} `}>{content}</p>
     </div>
   </div>
 );
@@ -27,12 +23,12 @@ const FeatureCard = ({ icon, title, content, index, darkMode }) => (
 const Business = ({ darkMode }) => (
   <section id="features" className="flex flex-col md:flex-row justify-start ">
     <div className={`${layout.sectionInfo} items-start`}>
-      <h2 className={`${styles.heading2} dark:text-white text-black`}>
+      <h2 className={`${styles.heading2} `}>
         You focus on your practice, we'll
         <br className="sm:block hidden" />
         manage the finances.
       </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5 dark:text-white`}>
+      <p className={`${styles.paragraph} `}>
         Our team of skilled attorneys provides comprehensive legal consultation
         and services. We specialize in areas such as contract law, intellectual
         property, and litigation. Let us guide you through the complexities of

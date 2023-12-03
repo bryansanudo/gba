@@ -12,6 +12,9 @@ module.exports = {
         lg: "1200px",
         xl: "1700px",
       },
+      colors: {
+        dimWhite: "rgba(255, 255, 255, 0.7)",
+      },
     },
   },
   plugins: [require("daisyui")],

@@ -23,7 +23,7 @@ const Hero = ({ darkMode }) => {
           } rounded-[10px] mb-2`}
         >
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
-          <p className={`${styles.paragraph} ml-2`}>
+          <p className={`font-normal  text-[18px] leading-[30.8px] ml-2`}>
             <span className="text-white ">
               Immigration Law Office in the US
             </span>
@@ -44,9 +44,7 @@ const Hero = ({ darkMode }) => {
         {/*  <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
           With Expertise
         </h1> */}
-        <p
-          className={`${styles.paragraph} dark:text-white text-black max-w-[470px] mt-5`}
-        >
+        <p className={`${styles.paragraph}  text-black max-w-[470px] mt-5`}>
           Your opportunity for success in the United States is closer than you
           imagine.
         </p>
