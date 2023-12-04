@@ -53,10 +53,10 @@ const Contact = ({ darkMode }) => (
     <div className="flex md:flex-row flex-col gap-12">
       <form className=" w-full">
         <div
-          className={`flex border  ${
+          className={`flex   ${
             darkMode
-              ? "shadow-sm shadow-white border-white bg-black-gradient-2"
-              : "shadow-lg shadow-secondary border-secondary"
+              ? "shadow-md shadow-white  "
+              : "shadow-xl shadow-secondary "
           } rounded-[20px]  flex-col md:gap-8 gap-4 md:p-10 p-6  w-full h-full mb-4 `}
         >
           <div className="flex flex-col md:flex-row items-center  justify-center gap-4">
@@ -166,10 +166,10 @@ const Contact = ({ darkMode }) => (
       <div className="grid md:grid-cols-2 grid-cols-1   rounded-[20px]   md:gap-10 gap-4   w-full  ">
         {cards.map(({ id, img, title, subtitle }) => (
           <div
-            className={`flex flex-col border  px-4 rounded-[20px] items-center justify-center text-center ${
+            className={`flex flex-col  px-4 rounded-[20px] items-center justify-center text-center ${
               darkMode
                 ? "shadow-sm shadow-white border-white "
-                : "shadow-lg shadow-secondary border-secondary"
+                : "shadow-lg shadow-secondary "
             } `}
           >
             <div

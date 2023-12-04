@@ -7,7 +7,7 @@ import { FaFacebookF } from "react-icons/fa";
 
 const Footer = ({ darkMode }) => {
   return (
-    <footer className="footer justify-between  border-b p-6 mb-28 ">
+    <footer className="footer justify-between  border-t p-6 mb-28 ">
       <aside className="flex flex-col items-center justify-center">
         <div>
           <img src={logo} alt="" />
