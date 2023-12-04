@@ -9,7 +9,7 @@ function App() {
   return (
     <div className={darkMode && "dark"}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <div className="dark:bg-accent  w-full overflow-hidden">
+      <div className="dark:bg-accent w-full overflow-hidden">
         <Home darkMode={darkMode} />
       </div>
     </div>

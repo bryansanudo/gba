@@ -8,6 +8,7 @@ import ServicesHome from "@/components/home/ServicesHome";
 import Footer from "@/components/Footer";
 import shield from "@/assets/Shield.svg";
 import Clients from "@/components/home/Clients";
+import Contact from "@/components/home/Contact";
 import { FaWhatsapp } from "react-icons/fa";
 
 const Home = ({ darkMode }) => {
@@ -29,6 +30,8 @@ const Home = ({ darkMode }) => {
           <CardDeal darkMode={darkMode} />
           <ServicesHome darkMode={darkMode} />
           <Clients darkMode={darkMode} />
+          <Contact darkMode={darkMode} />
+
           <Footer darkMode={darkMode} />
         </div>
       </div>
