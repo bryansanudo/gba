@@ -75,13 +75,9 @@ const ServicesHome = () => (
             className=" flex flex-col  items-start justify-center  md:gap-6 bg-gba-gradient rounded-[20px] box-shadow p-8 "
           >
             <div
-              className={`w-[64px] h-[64px] mask mask-hexagon ${styles.flexCenter} bg-dimBlue`}
+              className={`w-[64px] h-[64px] mask mask-hexagon-2 ${styles.flexCenter} bg-dimBlue`}
             >
-              <img
-                src={img}
-                alt="star"
-                className="w-[50%] h-[50%] object-contain"
-              />
+              <img src={img} alt="star" className="w-[200px] object-contain" />
             </div>
 
             <div className=" p-6 sm:px-3 sm:py-0">

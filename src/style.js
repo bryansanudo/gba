@@ -7,8 +7,8 @@ const styles = {
     "font-poppins font-semibold lg:text-[40px] text-[18px] sm:text-[24] md:text-[32px] text-white lg:leading-[76.8px] md:leading-[66.8px] w-full text-left",
   paragraph:
     "font-poppins font-normal  text-[18px] leading-[30.8px] max-w-[600px] dark:text-dimWhite mt-5",
-  title: "font-semibold text-white text-[18px] leading-[23.4px] mb-1",
-  subtitle: "font-normal text-dimWhite text-[16px] leading-[24px]",
+  title: "font-semibold dark:text-white text-[18px] leading-[23.4px] mb-1",
+  subtitle: "font-normal dark:text-dimWhite text-[16px] leading-[24px]",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",

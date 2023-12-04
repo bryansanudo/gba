@@ -4,12 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   html {
       font-family: 'Poppins', sans-serif;
   }
  
 }
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
+
+
 
 :root {
   --black-gradient: linear-gradient(

@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import styles from "@/style";
 import Section from "@/components/common/Section";
 import { MdNightsStay, MdWbSunny } from "react-icons/md";
+import logo from "@/assets/logo-gba.png";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [isMenuShown, setIsMenuShown] = useState(false);
@@ -40,7 +41,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <div className={`${styles.boxWidth}   `}>
         <div className="w-full  h-20 dark:text-white ">
           <div className="flex justify-start md:justify-end md:gap-5 items-center  mx-auto  h-full">
-            <div className="mr-auto hidden md:flex">logo</div>
+            <div className="mr-auto mt-2 hidden md:flex">
+              <img src={logo} className="w-36" alt="" />
+            </div>
             <div className="hidden lg:flex items-center">
               <ul className="flex gap-6 ">
                 {links.map(({ id, link }) => (
@@ -80,7 +83,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               <div className="bg-gray-300 h-6 mx-2 w-[1px] hidden md:flex"></div>
               <div>Smart Center</div>
             </div>
-            <div className="ml-auto md:hidden flex">logo</div>
+            <div className="ml-auto md:hidden flex">
+              <img src={logo} className="w-36" alt="" />
+            </div>
           </div>
         </div>
 

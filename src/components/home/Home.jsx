@@ -5,6 +5,7 @@ import Business from "@/components/home/Business";
 import Billing from "@/components/home/Billing";
 import CardDeal from "@/components/home/CardDeal";
 import ServicesHome from "@/components/home/ServicesHome";
+import Footer from "@/components/Footer";
 import shield from "@/assets/Shield.svg";
 import Clients from "@/components/home/Clients";
 import { FaWhatsapp } from "react-icons/fa";
@@ -28,11 +29,12 @@ const Home = ({ darkMode }) => {
           <CardDeal darkMode={darkMode} />
           <ServicesHome darkMode={darkMode} />
           <Clients darkMode={darkMode} />
+          <Footer darkMode={darkMode} />
         </div>
       </div>
 
       <div
-        className={`fixed flex items-center justify-center rounded-full w-14 h-14 bg-primary text-yellow-500 z-[100] right-6 bottom-6   ${
+        className={`fixed flex items-center justify-center hover:scale-110 duration-700 rounded-full w-14 h-14 bg-primary text-yellow-500 z-[100] right-6 bottom-6   ${
           darkMode ? "shadow-white shadow-lg" : "shadow-xl shadow-black"
         } `}
       >
