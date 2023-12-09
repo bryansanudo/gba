@@ -4,33 +4,61 @@ import styles from "@/style";
 import Section from "@/components/common/Section";
 import { MdNightsStay, MdWbSunny } from "react-icons/md";
 import logo from "@/assets/logo-gba.png";
+import { Link } from "react-router-dom";
+import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [isMenuShown, setIsMenuShown] = useState(false);
+
   const links = [
     {
       id: 1,
-      link: "Inicio",
+      name: "Inicio",
+      link: "/",
     },
     {
       id: 2,
-      link: "Acerca De",
+      name: "Acerca De",
+      link: "/acerca",
+    },
+  ];
+  const services = [
+    {
+      id: 1,
+      name: "Consultoría",
+      link: "/servicios/consultoria",
+    },
+    {
+      id: 2,
+      name: "Marketing As a Service",
+      link: "/servicios/marketing",
     },
     {
       id: 3,
-      link: "Servicios",
+      name: "Staffing",
+      link: "/servicios/staffing",
     },
     {
       id: 4,
-      link: "Casos De Éxito",
+      name: "Transformación",
+      link: "/servicios/transformacion",
+    },
+  ];
+  const links2 = [
+    {
+      id: 4,
+      name: "Casos De Éxito",
+      link: "/",
     },
     {
       id: 5,
-      link: "Blog",
+      name: "Blog",
+      link: "/",
     },
     {
       id: 6,
-      link: "Contacto",
+      name: "Contacto",
+      link: "/contacto",
     },
   ];
 
@@ -45,13 +73,48 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               <img src={logo} className="w-36" alt="" />
             </div>
             <div className="hidden lg:flex items-center">
-              <ul className="flex gap-6 ">
-                {links.map(({ id, link }) => (
+              <ul className="flex items-center justify-center gap-6 ">
+                {/* home, about */}
+                {links.map(({ id, link, name }) => (
                   <li
                     key={id}
                     className="py-6  capitalize duration-300 hover:text-primary hover:scale- cursor-pointer"
                   >
-                    {link}
+                    <Link to={link}>{name}</Link>
+                  </li>
+                ))}
+                {/* services */}
+                <li>
+                  <div className="dropdown dropdown-bottom dropdown-hover">
+                    <div
+                      tabIndex={0}
+                      className={`text-[18px] flex items-center   capitalize duration-300  hover:font-semibold  cursor-pointer `}
+                    >
+                      <p>Servicios</p>
+                      <div className="cursor-pointer">
+                        <div className="flex items-center gap-2">
+                          <IoMdArrowDropdown />
+                        </div>
+                      </div>
+                    </div>
+                    <ul className="dropdown-content  z-[1]   shadow bg-base-100 dark:bg-accent w-52">
+                      {services.map(({ id, link, name }) => (
+                        <Link key={id} to={link}>
+                          <li className={`w-full duration-300 `}>
+                            <p className="px-4 text-[14px]">{name}</p>
+                          </li>
+                        </Link>
+                      ))}
+                    </ul>
+                  </div>
+                </li>
+                {/* contact + */}
+                {links2.map(({ id, link, name }) => (
+                  <li
+                    key={id}
+                    className="py-6  capitalize duration-300 hover:text-primary hover:scale- cursor-pointer"
+                  >
+                    <Link to={link}>{name}</Link>
                   </li>
                 ))}
               </ul>
