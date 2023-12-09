@@ -10,6 +10,7 @@ import Staffing from "@/components/services/Staffing";
 import Consultoria from "@/components/services/Consultoria";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
+import RouterServices from "@/components/services/RouterServices";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -21,6 +22,12 @@ function App() {
       <div className="dark:bg-accent w-full overflow-hidden">
         <Routes>
           <Route path="/" element={<Home darkMode={darkMode} />} />
+          <Route
+            path="/services/*"
+            element={<RouterServices darkMode={darkMode} />}
+          />
+          {/* <Route path="/blog/*" element={<Services darkMode={darkMode} />} /> */}
+          {/* <Route path="/" element={<Home darkMode={darkMode} />} />
           <Route path="/contacto" element={<Contact darkMode={darkMode} />} />
 
           <Route
@@ -38,8 +45,9 @@ function App() {
           <Route
             path="servicios/transformacion"
             element={<Transformacion darkMode={darkMode} />}
-          />
+          /> */}
         </Routes>
+
         <div
           className={`dark:bg-accent   ${styles.paddingX} ${styles.flexCenter}`}
         >

@@ -1,6 +1,6 @@
 import { features } from "@/constants";
 import styles, { layout } from "@/style";
-import Section from "@/components/common/Section";
+
 import discount from "@/assets/Discount.svg";
 import { GoDot } from "react-icons/go";
 

@@ -3,8 +3,6 @@ import styles from "@/style";
 
 import text from "@/assets/text.jpg";
 
-import Section from "@/components/common/Section";
-
 import shield from "@/assets/Discount.svg";
 import { BiMailSend } from "react-icons/bi";
 

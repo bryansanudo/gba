@@ -1,5 +1,4 @@
 import styles from "@/style";
-import Section from "@/components/common/Section";
 
 const stats = [
   {

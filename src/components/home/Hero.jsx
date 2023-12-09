@@ -6,7 +6,6 @@ import test2 from "@/assets/test2.png";
 import test3 from "@/assets/test3.png";
 import test4 from "@/assets/test4.png";
 import test5 from "@/assets/test5.png";
-import Section from "@/components/common/Section";
 
 const Hero = ({ darkMode }) => {
   return (

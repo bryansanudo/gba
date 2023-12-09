@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import styles from "@/style";
-import Section from "@/components/common/Section";
+
 import { MdNightsStay, MdWbSunny } from "react-icons/md";
 import logo from "@/assets/logo-gba.png";
 import { Link } from "react-router-dom";
@@ -26,22 +26,22 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     {
       id: 1,
       name: "Consultoría",
-      link: "/servicios/consultoria",
+      link: "/services/consultoria",
     },
     {
       id: 2,
       name: "Marketing As a Service",
-      link: "/servicios/marketing",
+      link: "/services/marketing",
     },
     {
       id: 3,
       name: "Staffing",
-      link: "/servicios/staffing",
+      link: "/services/staffing",
     },
     {
       id: 4,
       name: "Transformación",
-      link: "/servicios/transformacion",
+      link: "/services/transformacion",
     },
   ];
   const links2 = [
